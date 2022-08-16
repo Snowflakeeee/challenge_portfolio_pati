@@ -25,7 +25,7 @@
 <br/><br/>
 <h3> remind_password_xpath
 <h5>//*[contains(@class, "MuiTypography-root MuiLink")]
-<h5>text.//*[text()="Remind password"]
+<h5>//*[text()="Remind password"]
 <h5>//body[1]//form[1]//div[1]/a[1]
 <h5>//a[contains(text(),'Remind password')]
 
