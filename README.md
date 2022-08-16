@@ -37,7 +37,6 @@
 <br/><br/>
 <h5>//div[contains(text(),'Polski')]
 <h5>//*[@id="__next"]/form/div/div[2]/div/div
-<h5>//body[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]
 
 <br/><br/>
 <h3>sing_in_xpath
