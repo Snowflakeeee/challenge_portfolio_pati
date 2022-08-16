@@ -24,6 +24,7 @@
 
 <br/><br/>
 <h3> remind_password_xpath
+<h5>//*[@id="__next"]/form/div/div[1]/a
 <h5>//*[contains(@class, "MuiTypography-root MuiLink")]
 <h5>//*[text()="Remind password"]
 <h5>//body[1]//form[1]//div[1]/a[1]
