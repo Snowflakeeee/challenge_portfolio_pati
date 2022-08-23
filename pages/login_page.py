@@ -3,6 +3,7 @@ from pages.base_page import BasePage
 
 class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
+<<<<<<< HEAD
     password_field_xpath = "//input[@id='password']"
     sign_in_button_xpath = "//span[contains(text(),'Sign in')]"
     scouts_panel_xpath = "//h5[contains(text(),'Scouts Panel')]"
@@ -10,6 +11,14 @@ class LoginPage(BasePage):
     change_language_xpath = "//div[contains(text(),'English')]"
     login_url = 'https://scouts-test.futbolkolektyw.pl/en'
     expected_title = 'Scouts panel - sign in'
+=======
+    password_field_xpath ="//input[@id='password']"
+    sign_in_button_xpath ="//span[contains(text(),'Sign in')]"
+    scouts_panel_xpath ="//h5[contains(text(),'Scouts Panel')]"
+    remind_password_xpath ="//a[contains(text(),'Remind password')]"
+    change_language_xpath ="//div[contains(text(),'English')]"
+
+>>>>>>> 5de5ace565c8cb49406d3dec6c9cccfa91fef349
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
 
