@@ -3,10 +3,9 @@ from pages.base_page import BasePage
 
 
 class Dashboard(BasePage):
-<<<<<<< HEAD
+
     expected_title = 'Scouts panel'
     dashboard_url = 'https://scouts-test.futbolkolektyw.pl/'
-=======
     button_xpath = "//*[@id='login']"
     main_page_xpath = "//span[contains(text(),'Main page')]"
     players_xpath = "//*[text()='Players']"
@@ -22,7 +21,6 @@ class Dashboard(BasePage):
     players_rating_xpath = "//tbody/tr[@id='MUIDataTableBodyRow-9']/td[6]/div[1]"
     activity_xpath = "//h2[contains(text(),'Activity')]"
     tester_snizhana_button_xpath = "//span[contains(text(),'Tester')]"
->>>>>>> 5de5ace565c8cb49406d3dec6c9cccfa91fef349
 
     def title_of_page(self):
         time.sleep(5)
