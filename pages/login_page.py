@@ -1,3 +1,6 @@
+from _pytest import unittest
+from selenium.webdriver.chrome.webdriver import WebDriver
+
 from pages.base_page import BasePage
 
 
@@ -7,14 +10,12 @@ class LoginPage(BasePage):
     sign_in_button_xpath = "//span[contains(text(),'Sign in')]"
     scouts_panel_xpath = "//h5[contains(text(),'Scouts Panel')]"
     remind_password_xpath = "//a[contains(text(),'Remind password')]"
-    change_language_xpath = "//div[contains(text(),'English')]"
     login_url = 'https://scouts-test.futbolkolektyw.pl/en'
     expected_title = 'Scouts panel - sign in'
-    password_field_xpath = "//input[@id='password']"
-    sign_in_button_xpath = "//span[contains(text(),'Sign in')]"
-    scouts_panel_xpath = "//h5[contains(text(),'Scouts Panel')]"
-    remind_password_xpath = "//a[contains(text(),'Remind password')]"
-    change_language_xpath = "//div[contains(text(),'English')]"
+    change_language_xpath = "//div[1]/ul[2]/div[1]"
+    def __init__(self, driver: WebDriver):
+        super().__init__(driver)
+
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -27,5 +28,28 @@ class LoginPage(BasePage):
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
+
+    def clicking_on_changing_language_button(self):
+        self.click_on_the_element(self.change_language_xpath)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
