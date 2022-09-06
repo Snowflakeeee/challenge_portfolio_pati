@@ -28,7 +28,14 @@ class TestLoginPage(unittest.TestCase):
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
 
-
+    def test_log_in_to_the_system_wrong_password(self):
+        user_login = LoginPage(self.driver)
+        user_login.title_of_page()
+        user_login.type_in_email('user01@getnada.com')
+        user_login.filling_in_the_password('Test-090')
+        user_login.clicking_on_sign_in_button()
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.title_of_page()
     @classmethod
     def tearDown(self):
         self.driver.quit()

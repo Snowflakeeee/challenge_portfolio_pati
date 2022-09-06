@@ -31,25 +31,3 @@ class LoginPage(BasePage):
 
     def clicking_on_changing_language_button(self):
         self.click_on_the_element(self.change_language_xpath)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
